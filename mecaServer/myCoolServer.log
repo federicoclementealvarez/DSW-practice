@@ -214,3 +214,315 @@ Timestamp: Sun May 07 2023 01:37:38 GMT-0300 (hora estándar de Argentina)
 Response status code: 200
 Response description: Succesful response
 
+Method: GET
+URL: /
+Timestamp: Thu May 18 2023 23:44:23 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Thu May 18 2023 23:44:23 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /page1
+Timestamp: Thu May 18 2023 23:44:34 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Thu May 18 2023 23:44:36 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /page2
+Timestamp: Thu May 18 2023 23:44:37 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Thu May 18 2023 23:44:38 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /home
+Timestamp: Thu May 18 2023 23:44:42 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /index
+Timestamp: Thu May 18 2023 23:44:48 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /indexxx
+Timestamp: Thu May 18 2023 23:44:51 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 09:56:27 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 09:57:49 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 09:57:49 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /page1
+Timestamp: Fri May 19 2023 09:57:52 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 09:57:52 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 09:57:54 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 09:57:54 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /page2
+Timestamp: Fri May 19 2023 09:57:55 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 09:57:55 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 09:57:56 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 09:57:56 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /home
+Timestamp: Fri May 19 2023 09:57:59 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 09:58:00 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /homee
+Timestamp: Fri May 19 2023 09:58:04 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 09:58:04 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 10:11:30 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 10:11:30 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /page1
+Timestamp: Fri May 19 2023 10:11:32 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 10:11:32 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 10:11:33 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 10:11:33 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /page2
+Timestamp: Fri May 19 2023 10:11:34 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 10:11:34 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 10:11:35 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /g
+Timestamp: Fri May 19 2023 10:11:38 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 10:11:38 GMT-0300 (hora estándar de Argentina)
+Response status code: 400
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 18:20:41 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Fri May 19 2023 18:20:41 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /page1
+Timestamp: Fri May 19 2023 18:20:45 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 18:20:47 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /page2
+Timestamp: Fri May 19 2023 18:20:48 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 18:20:49 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /home
+Timestamp: Fri May 19 2023 18:20:52 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /home.html
+Timestamp: Fri May 19 2023 18:20:57 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /home
+Timestamp: Fri May 19 2023 18:20:59 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /homeee
+Timestamp: Fri May 19 2023 18:21:01 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 18:26:19 GMT-0300 (hora estándar de Argentina)
+Response status code: 500
+Response description: Error - Something went wrong
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 18:29:52 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /page1
+Timestamp: Fri May 19 2023 18:29:56 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404: File not found
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 18:31:59 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /page2
+Timestamp: Fri May 19 2023 18:32:01 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Fri May 19 2023 18:32:03 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /page1
+Timestamp: Fri May 19 2023 18:32:04 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404: File not found
+

@@ -1,15 +1,15 @@
 class Example {
-    skill="un capo";
+    skill="skl";
 }
 
 class Son extends Example{
-    #hability="crack";
+    #hability="hab";
     getHability(){
         return(this.#hability);
     }
 }
 
-s = new Son();
+let s = new Son();
 
 console.log(s.skill+" y "+s.getHability(),"\n");
 
@@ -22,3 +22,4 @@ function printProto (s){
 }
 
 printProto(s);
+console.log(s==null);

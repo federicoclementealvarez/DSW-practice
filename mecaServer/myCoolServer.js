@@ -1,63 +1,68 @@
 import fs from 'node:fs';
 import http from 'node:http';
 
-//try{
+
+try{
   const hostname = '127.0.0.1';
   const port = 3000;
+  const indexList = ['/', '/home', '/home.html', '/index', '/index.html'];
+  const page1List = ['/page1'];
+  const page2List = ['/page2'];  
 
+  function setServerReq(serverReq,file,desc,statusCode){
+    serverReq.file=file;
+    serverReq.desc = desc;
+    serverReq.res.statusCode=statusCode;
+  }
+
+  function defineHtml(serverReq){
+    serverReq.res.statusCode=200;
+    if (serverReq.req.method==='GET'){
+      if(indexList.includes(serverReq.req.url)) serverReq.file='index.html';
+      else if (page1List.includes(serverReq.req.url)) serverReq.file='page11.html';
+      else if (page2List.includes(serverReq.req.url)) serverReq.file='page2.html';
+      else setServerReq(serverReq,'notFoundPage.html','Error 404 - Page not found',404);
+    }
+    else setServerReq(serverReq,'notAllowedMethod.html','Error 405 - Method not allowed',405);
+
+    return(serverReq);
+  }
 
   const server = http.createServer(async (req, res) => {
-    const timestamp = new Date();
-    if (req.method==='GET'){
-      let desc='Succesful response';
-      switch (req.url){
-        case ('/'):
-        case ('/home'):
-        case ('/home.html'):
-        case ('/index.html'):
-        case ('/index'):
-          await response(res,req,'index.html',200, timestamp, desc);
-          break;
-    
-        case ('/page1'):
-          await response(res,req,'page1.html',200, timestamp, desc);
-          break;
-    
-        case ('/page2'):
-          await response(res,req,'page2.html',200, timestamp, desc);
-          break;
-    
-        default:
-          desc="Error 404 - Page not found";
-          await response(res,req,'notFoundPage.html',404, timestamp, desc);
-          break;
+    try{
+      const serverReq = {
+        req: req,
+        res: res,
+        timestamp: new Date(),
+        desc: 'Succesful response',
       }
+      await response(defineHtml(serverReq));
     }
-    else{
-      res.statusCode = 405;
-      res.setHeader('Content-Type', 'text/html');
-      let desc = 'Error - Method not allowed';
+    catch (error){
+      res.statusCode = 500;
+      res.setHeader('Content-Type', 'text/plain');
+      let desc = 'Error 500 - Something went wrong';
       res.end(desc);
-      recordRequest(req,timestamp,res,desc);
+      recordRequest({req:req, res:res, timestamp:new Date(),desc:desc});
     }
   });
 
 
-  async function response(res,req,file,stsCode,timestamp,desc)
+  async function response(serverReq)
   {
     try{
-      res.setHeader('Content-Type', 'text/html');
-      fs.readFile(file,(error,data)=>{
+      fs.readFile(serverReq.file,(error,data)=>{
         if(error){
-          res.statusCode=404;
-          desc='Error 404: File not found';
-          res.end(desc);
+          serverReq.res.setHeader('Content-Type', 'text/plain');
+          serverReq.res.statusCode=404;
+          serverReq.desc='Error 404: File not found';
+          serverReq.res.end(serverReq.desc);
         }
         else{
-          res.statusCode = stsCode;
-          res.end(data);
+          serverReq.res.setHeader('Content-Type', 'text/html');
+          serverReq.res.end(data);
         }
-        recordRequest(req,timestamp,res,desc);
+        recordRequest(serverReq);
       })
     }
     catch (error){
@@ -66,9 +71,9 @@ import http from 'node:http';
   }
  
 
-  function recordRequest(req, timestamp, res, desc){
+  function recordRequest(serverReq){
     try{
-      fs.appendFile('myCoolServer.log',`Method: ${req.method}\nURL: ${req.url}\nTimestamp: ${timestamp}\nResponse status code: ${res.statusCode}\nResponse description: ${desc}\n\n`,()=>{
+      fs.appendFile('myCoolServer.log',`Method: ${serverReq.req.method}\nURL: ${serverReq.req.url}\nTimestamp: ${serverReq.timestamp}\nResponse status code: ${serverReq.res.statusCode}\nResponse description: ${serverReq.desc}\n\n`,()=>{
         console.log(`Request succesfully recorded`);
       });
     }
@@ -86,7 +91,8 @@ import http from 'node:http';
       console.log(`Server running at http://${hostname}:${port}/`);
     }
   });
-/*}
+
+}
 catch (error){
-  console.log(error);
-}*/
+  console.log("Internal code exception: " + error);
+}
