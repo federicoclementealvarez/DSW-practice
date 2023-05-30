@@ -19,7 +19,7 @@ try{
     serverReq.res.statusCode=200;
     if (serverReq.req.method==='GET'){
       if(indexList.includes(serverReq.req.url)) serverReq.file='index.html';
-      else if (page1List.includes(serverReq.req.url)) serverReq.file='page11.html';
+      else if (page1List.includes(serverReq.req.url)) serverReq.file='page1.html';
       else if (page2List.includes(serverReq.req.url)) serverReq.file='page2.html';
       else setServerReq(serverReq,'notFoundPage.html','Error 404 - Page not found',404);
     }
@@ -28,22 +28,28 @@ try{
     return(serverReq);
   }
 
+  const serverReq = {
+    desc: 'Succesful response',
+  }
+
   const server = http.createServer(async (req, res) => {
     try{
-      const serverReq = {
-        req: req,
-        res: res,
-        timestamp: new Date(),
-        desc: 'Succesful response',
-      }
+      serverReq.res=res;
+      serverReq.req=req;
+      serverReq.timestamp=new Date();
       await response(defineHtml(serverReq));
     }
     catch (error){
-      res.statusCode = 500;
-      res.setHeader('Content-Type', 'text/plain');
-      let desc = 'Error 500 - Something went wrong';
-      res.end(desc);
-      recordRequest({req:req, res:res, timestamp:new Date(),desc:desc});
+      serverReq.res=res;
+      serverReq.req=req;
+      serverReq.timestamp=new Date();
+      serverReq.desc='Error 500 - Something went wrong',
+      serverReq.res.statusCode = 500;
+      serverReq.res.setHeader('Content-Type', 'text/plain');
+      serverReq.res.end(serverReq.desc);
+    }
+    finally{
+      recordRequest(serverReq);
     }
   });
 
@@ -62,7 +68,6 @@ try{
           serverReq.res.setHeader('Content-Type', 'text/html');
           serverReq.res.end(data);
         }
-        recordRequest(serverReq);
       })
     }
     catch (error){
@@ -78,7 +83,7 @@ try{
       });
     }
       catch (error){
-        console.log(error);
+        console.log('Error al hacer el log: '+error);
       }
   }
 

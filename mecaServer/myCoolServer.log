@@ -526,3 +526,93 @@ Timestamp: Fri May 19 2023 18:32:04 GMT-0300 (hora estándar de Argentina)
 Response status code: 404
 Response description: Error 404: File not found
 
+Method: GET
+URL: /
+Timestamp: Tue May 30 2023 01:44:19 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /page1
+Timestamp: Tue May 30 2023 01:44:24 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404: File not found
+
+Method: GET
+URL: /page2
+Timestamp: Tue May 30 2023 01:44:30 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Tue May 30 2023 01:44:32 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /page1
+Timestamp: Tue May 30 2023 01:44:33 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404: File not found
+
+Method: GET
+URL: /home
+Timestamp: Tue May 30 2023 01:44:42 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Tue May 30 2023 01:45:09 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /page1
+Timestamp: Tue May 30 2023 01:45:11 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Tue May 30 2023 01:45:13 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Tue May 30 2023 01:53:03 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /page1
+Timestamp: Tue May 30 2023 01:53:08 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /
+Timestamp: Tue May 30 2023 01:53:09 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+
+Method: GET
+URL: /fgdfgdf
+Timestamp: Tue May 30 2023 01:53:13 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404 - Page not found
+
+Method: GET
+URL: /
+Timestamp: Tue May 30 2023 01:53:53 GMT-0300 (hora estándar de Argentina)
+Response status code: 500
+Response description: Error 500 - Something went wrong
+
+Method: undefined
+URL: /
+Timestamp: Tue May 30 2023 01:55:38 GMT-0300 (hora estándar de Argentina)
+Response status code: 200
+Response description: Succesful response
+

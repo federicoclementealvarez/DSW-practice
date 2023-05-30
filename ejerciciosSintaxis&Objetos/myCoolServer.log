@@ -1,0 +1,18 @@
+Method: GET
+URL: /
+Timestamp: Tue May 30 2023 01:41:38 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404: File not found
+
+Method: GET
+URL: /favicon.ico
+Timestamp: Tue May 30 2023 01:41:39 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404: File not found
+
+Method: GET
+URL: /
+Timestamp: Tue May 30 2023 01:43:04 GMT-0300 (hora estándar de Argentina)
+Response status code: 404
+Response description: Error 404: File not found
+
